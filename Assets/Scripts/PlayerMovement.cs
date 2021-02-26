@@ -32,5 +32,9 @@ public class PlayerMovement : MonoBehaviour
         {
             playerBody.AddForce(0,0, forwardForce);
         }
+        if(playerBody.position.y < -10)
+        {
+            FindObjectOfType<Manage>().EndGame();
+        }
     }
 }
