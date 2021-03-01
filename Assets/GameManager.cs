@@ -1,9 +1,20 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject completeLevelUI;
+    public void CompleteLevelUI ()
+    {
+        completeLevelUI.SetActive(true);
+    }
+    public void CompleteLevel()
+    {
+        Debug.Log("Level Won!");
+    }
+
     // Start is called before the first frame update
     void Start()
     {

@@ -7,6 +7,10 @@ public class Manage : MonoBehaviour
     // Start is called before the first frame update
     bool gameHasEnded = false;
     public float restartDelay = 2f;
+    public void CompleteLevel()
+    {
+        Debug.Log("Level WON!");
+    }
 
     public void EndGame ()
     {
