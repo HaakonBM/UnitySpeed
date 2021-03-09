@@ -515,7 +515,6 @@ GameObject:
   - component: {fileID: 657567277}
   - component: {fileID: 657567279}
   - component: {fileID: 657567280}
-  - component: {fileID: 657567281}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -616,18 +615,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &657567281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 657567275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a1d8b6b133fd2409e81fcc6acc00ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &661279142
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -944,6 +931,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   restartDelay: 2
+  gm: {fileID: 0}
+  LC: {fileID: 0}
 --- !u!114 &818357997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -957,6 +946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   completeLevelUI: {fileID: 657567275}
+  LC: {fileID: 0}
 --- !u!4 &818357998
 Transform:
   m_ObjectHideFlags: 0
@@ -984,6 +974,7 @@ GameObject:
   - component: {fileID: 869780269}
   - component: {fileID: 869780268}
   - component: {fileID: 869780267}
+  - component: {fileID: 869780272}
   m_Layer: 0
   m_Name: endLevel
   m_TagString: Untagged
@@ -1078,6 +1069,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0.112, y: 0, z: 0}
+--- !u!114 &869780272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869780266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a1d8b6b133fd2409e81fcc6acc00ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &957889667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1430,8 +1433,6 @@ GameObject:
   - component: {fileID: 1071434120}
   - component: {fileID: 1071434122}
   - component: {fileID: 1071434121}
-  - component: {fileID: 1071434124}
-  - component: {fileID: 1071434123}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1495,30 +1496,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071434119}
   m_CullTransparentMesh: 0
---- !u!114 &1071434123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071434119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a1d8b6b133fd2409e81fcc6acc00ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1071434124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1071434119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06a1d8b6b133fd2409e81fcc6acc00ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1086472046 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6141784145425215262, guid: f09d45873fcc76c4ca471299c33de928,

@@ -6,6 +6,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject completeLevelUI;
+    public levelComplete LC;
     public void CompleteLevelUI ()
     {
         completeLevelUI.SetActive(true);
@@ -13,17 +14,9 @@ public class GameManager : MonoBehaviour
     public void CompleteLevel()
     {
         Debug.Log("Level Won!");
+        Debug.Log("Dette er metoden");
+        LC.LoadNextLevel();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

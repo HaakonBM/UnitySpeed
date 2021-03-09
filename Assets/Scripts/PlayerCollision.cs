@@ -16,6 +16,7 @@ public class PlayerCollision : MonoBehaviour
 
         if (colidedWithObstacle)
         {
+            
             movement.enabled = false;
             FindObjectOfType<Manage>().EndGame();
 

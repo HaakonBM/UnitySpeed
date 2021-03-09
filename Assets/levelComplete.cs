@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class levelComplete : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
     public void LoadNextLevel()
     {
+        Debug.Log("Loader ny level fra levelComplete");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
