@@ -39,4 +39,13 @@ public class BallMovement : MonoBehaviour
             ballBody.AddForce(0, sidewaysV * Time.deltaTime, 0, ForceMode.VelocityChange);
         }
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        string collidedWith = collision.collider.tag;
+        bool collTileBorder = collidedWith.StartsWith("tileBorder");
+        if (collTileBorder)
+        {
+            Debug.Log("Went through TILEBORDER");
+        }
+    }
 }
