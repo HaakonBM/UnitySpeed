@@ -544,6 +544,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballBody: {fileID: 935863565}
+  moves: 10
 --- !u!54 &935863565
 Rigidbody:
   m_ObjectHideFlags: 0
