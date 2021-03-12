@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowBall : MonoBehaviour
+public class CameraCar : MonoBehaviour
 {
-    // Start is called before the first frame update
-
     public Transform playerBall;
     public Vector3 offset;
 
@@ -14,5 +12,4 @@ public class FollowBall : MonoBehaviour
     {
         transform.position = playerBall.position + offset;
     }
-    
 }
