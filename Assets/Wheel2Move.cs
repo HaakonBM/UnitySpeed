@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarMove : MonoBehaviour
+public class Wheel2Move : MonoBehaviour
 {
+    // Start is called before the first frame update
     public Rigidbody ballBody;
     public float forwardV = 10f;
     public float sidewaysV = 10f;
@@ -28,6 +29,5 @@ public class CarMove : MonoBehaviour
         {
             ballBody.AddForce(-sidewaysV * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-
     }
-}
+    }

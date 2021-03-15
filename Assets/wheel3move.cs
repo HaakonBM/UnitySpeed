@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CarMove : MonoBehaviour
+public class wheel3move : MonoBehaviour
 {
     public Rigidbody ballBody;
     public float forwardV = 10f;
@@ -28,6 +28,5 @@ public class CarMove : MonoBehaviour
         {
             ballBody.AddForce(-sidewaysV * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
-
     }
 }
